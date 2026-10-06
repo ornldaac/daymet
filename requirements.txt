@@ -1,0 +1,13 @@
+earthaccess
+pydap
+xarray
+netCDF4
+dask
+numpy
+matplotlib
+geopandas
+shapely
+rioxarray
+folium
+requests
+jupyterlab

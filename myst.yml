@@ -1,0 +1,28 @@
+version: 1
+project:
+  title: Daymet Data Tutorials
+  github: ornldaac/daymet
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/airborne.pdf
+  toc:
+    - file: README.md
+    - file: doc/prerequisites.md
+    - title: Tutorials
+      children:
+        - file: tutorials/daymet_subset_opendap.ipynb
+        - file: tutorials/Tutorial_Daymet_TVASubset.ipynb
+
+site:
+  options:
+    favicon: doc/images/favicon.ico
+    logo: docs/images/daymet.png
+    folders: true
+    hide_toc: false
+  template: book-theme
+  actions:
+    - title: GitHub
+      url: https://github.com/ornldaac/daymet
+  parts:
+    primary_sidebar_footer: earthdata_footer.md
